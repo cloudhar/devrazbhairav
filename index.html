@@ -91,7 +91,30 @@
     </script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
     <style>
-
+    /* Style for the popup */
+    #popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid #000;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        /* Style for the overlay */
+        #overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
 
 /* Hide submenu by default */
 .submenu {
@@ -346,6 +369,16 @@
     </script>
     <!-- #endregion Jssor Slider End -->
 
+<!-- popup for advertisement  -->
+    <div id="overlay"></div>
+    <div id="popup" style="width: 500px; height: 300px; border-radius: 10px;">
+        <h2>Popup Message</h2>
+        <p>donate donate !!!.</p>
+
+<span> <a href="donation.html">donate now!!</a></span>
+        <button onclick="closePopup()" style="position: absolute; top: 10px; right: 10px;">X</button>
+    </div>
+<!-- popup ends here  -->
 
 	<!-- Features -->
 	<div id="fh5co-features">
@@ -529,6 +562,25 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+        // Function to show the popup
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Show the popup 10 seconds after the page loads
+        window.onload = function() {
+            setTimeout(showPopup, 15000);
+        }
+  
 
     </script>
 
