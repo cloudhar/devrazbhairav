@@ -31,6 +31,40 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.jpeg">
     <style>
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Display submenu on hover */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Style submenu items */
+.submenu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu li a:hover {
+    background-color: #f1f1f1;
+}
+
+
          #marqColor{
             color:green;
         }
@@ -191,38 +225,52 @@
 
 <body data-spy="scroll" data-offset="80" id="page-top">
     <!------------------------------------------------------Nav Bar------------------------------------------------------------------------->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <header id="fh5co-header" role="banner">
+      <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <img id="img1" class="navbar-brand img" src="img/logo.jpeg"/>
-                <a class="navbar-brand page-scroll" href="#page-top">Devraz Bhairav Temple</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="index.html">Home</a></li>
-                    <li><a class="page-scroll" href="about_devraz.html">Devraz Bhairav </a></li>                    
-                    <li><a class="page-scroll" href="aboutSaints.html">Great Saints</a></li>          
-                    <li><a class="page-scroll" href="arti.html">Bhajans</a></li>
-                    
-                    <li><a class="page-scroll" href="events.html">News & Events</a></li>
-                    <li><a class="page-scroll" href="gallery.html">Gallery</a></li>
-                    <!-- <li><a class="page-scroll" href="horoscope.html">Horoscope</a></li>                     -->
-                    <li><a class="page-scroll" href="donation.html">Donations</a></li>
-                    <li><a class="page-scroll" href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          <div class="navbar-header"> 
+          <!-- Mobile Toggle Menu Button -->
+          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+          <a class="navbar-brand" href="index.html" style="font-size: 18px;">Devraz Bhairav Temple
+          </a>
+          </div>
+  
+          <div id="fh5co-navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="index.html"><span>Home <span class="border"></span></span></a></li>
+              <li class="dropdown">
+                              <a href="about_devraz.html">
+                                  <span>Devraz Bhairav <span class="border"></span></span>
+                              </a>
+                              <ul class="submenu">
+                                  <li><a href="index.html">Background</a></li>
+                                  <li><a href="index.html">Current state</a></li>
+                                  <li><a href="index.html">Proposed layout</a></li>
+                              </ul>
+                          </li>
+                                                       
+                          <li><a class="page-scroll" href="aboutSaints.html"><span>Great Saints<span class="border"></span></span></a></li>        
+                          
+                          <li class="dropdown">
+                              <a class="page-scroll" href="events.html">
+                                  <span>Media<span class="border"></span></span>
+                              </a>
+                              <ul class="submenu">
+                                  <li><a href="arti.html">Bhajans</a></li>
+                                  <li><a href="gallery.html">Gallery</a></li>
+                              </ul>
+                          </li>
+  
+                          <li><a class="page-scroll" href="events.html">News & Events<span class="border"></span></a></li>
+                          <li><a class="page-scroll" href="donation.html">Donations<span class="border"></span></a></li>
+                          
+              <!-- <li><a href="horoscope.html"><span>Horoscope <span class="border"></span></span></a></li>                     -->
+              <li><a href="contact.html"><span>Contact us <span class="border"></span></span></a></li>
+            </ul>
+          </div>
         </div>
-        <marquee class="marquee-header" id="marqColor"> Keep in touch with our Temple via other Social Media site - Facebook: <a href="https://www.facebook.com/shrisaibabasansthantrustshirdi" target="_blank" id="marqLinkColor" >"Devraz Bhairav "</a>, Twitter: <a href="https://twitter.com/ssstshirdi" target="_blank" id="marqLinkColor" >@Shrishirdisaibabatemple</a> #Sabka Malik Ek
-        </marquee>          
-        <!-- /.container-fluid -->
-    </nav>     
+      </nav>
+    </header>   
     <!-----------------------------News and events------------------------------------------>  
 
 			<section id="events" class="secPad" style="margin-top: 80px;">
