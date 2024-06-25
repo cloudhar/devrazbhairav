@@ -142,8 +142,10 @@
   #custom-table {
     width: 100%;
     border-collapse: collapse;
+   border-radius: 15px;
+   overflow: hidden;
   }
-
+  
   #custom-table th, #custom-table td {
     padding: 10px;
     border: 1px solid #ddd;
@@ -289,7 +291,10 @@
                             <td> <time datetime="2024-06-23">June 23, 2024</time></td>
                             <td>Asthapna Sudhar Samati Meeting</td>
                             <td>
-                              <ul>
+
+
+                             
+                              <ul id="text-container">
                                 A meeting of the community members was held today on 23rd June 2024 at Poshbab ashram chinore .It was attended by a good number of people and there was a threadbare discussion regarding the renovation work which will be started once we update bank account of Asthapna Sudhar Samati and start donations.
                                 In this regard it was decided by the committee headed by Sh Ram Krishan Raina (president) that Sh. Ashok Pandita (treasurer) shall make the bank account ready for receiving online donations by doing the needful at their end. Once the account becomes active, it will be available on our website which is in making. It was also decided to start renovation work once we get a good amount from donations. Hope all Nunar Baradari will take interest and help to make this mission successful.
                                </ul>
@@ -353,6 +358,49 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    const longText = "This is a long text that will be shortened. When the user clicks on 'Show More', the rest of the text will be displayed. This feature is useful for improving the user experience by preventing information overload and making the content more manageable.";
+    const wordLimit = 20;
+
+    const words = longText.split(' ');
+    const shortText = words.slice(0, wordLimit).join(' ');
+    const hiddenText = words.slice(wordLimit).join(' ');
+
+    const textContainer = document.getElementById('text-container');
+
+    if (words.length > wordLimit) {
+        textContainer.innerHTML = `
+            <span class="short-text">${shortText}...</span>
+            <span class="hidden-text" style="display: none;">${hiddenText}</span>
+            <button onclick="toggleText(this)">Show More</button>
+        `;
+    } else {
+        textContainer.textContent = longText;
+    }
+});
+
+function toggleText(button) {
+    const textContainer = button.parentElement;
+    const hiddenTextElement = textContainer.querySelector('.hidden-text');
+    const shortTextElement = textContainer.querySelector('.short-text');
+
+    console.log('Button clicked');
+    console.log('Hidden text display:', hiddenTextElement.style.display);
+
+    if (hiddenTextElement.style.display === 'none') {
+        hiddenTextElement.style.display = 'inline';
+        button.textContent = 'Show Less';
+        shortTextElement.style.display = 'none';
+    } else {
+        hiddenTextElement.style.display = 'none';
+        button.textContent = 'Show More';
+        shortTextElement.style.display = 'inline';
+    }
+}
+
+    </script> -->
 
 </body>
 
