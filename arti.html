@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,53 +32,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
     <style>
-
         /* Hide submenu by default */
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Display submenu on hover */
-.dropdown:hover .submenu {
-    display: block;
-}
-
-/* Style submenu items */
-.submenu li {
-    border-bottom: 1px solid #ddd;
-}
-
-.submenu li a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #333;
-}
-
-.submenu li a:hover {
-    background-color: #f1f1f1;
-}
-
-        #marqColor{
-            color:green;
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        #marqLinkColor{
+
+        /* Display submenu on hover */
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        /* Style submenu items */
+        .submenu li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .submenu li a:hover {
+            background-color: #f1f1f1;
+        }
+
+        #marqColor {
+            color: green;
+        }
+
+        #marqLinkColor {
             color: red;
         }
-        footer{
+
+        footer {
             text-align: center;
             color: #7b0d0d;
         }
+
         #custom-table {
-            width: 800px; /* Adjust the width as per your preference */
-            margin: 0 auto; /* Center the table on the page */
+            width: 800px;
+            /* Adjust the width as per your preference */
+            margin: 0 auto;
+            /* Center the table on the page */
         }
     </style>
 
@@ -103,30 +105,28 @@
 <body data-spy="scroll" data-offset="80" id="page-top">
     <!------------------------------------------------------Nav Bar------------------------------------------------------------------------->
     <header id="fh5co-header" role="banner">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header"> 
-				<!-- Mobile Toggle Menu Button -->
-				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-				<a class="navbar-brand" href="index.html" style="font-size: 18px;">Devraz Bhairav Temple
-				</a>
-				</div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a class="navbar-brand" href="index.html" style="font-size: 18px;">Devraz Bhairav Temple</a>
+                </div>
 
-				<div id="fh5co-navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li ><a href="index.html"><span>Home <span class="border"></span></span></a></li>
-						<li class="dropdown">
+                <div id="fh5co-navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span>Home <span class="border"></span></span></a></li>
+                        <li class="dropdown">
                             <a href="about_devraz.html">
                                 <span>Devraz Bhairav <span class="border"></span></span>
-                              </a>
-                              <ul class="submenu">
+                            </a>
+                            <ul class="submenu">
                                 <li><a href="videshwar.html">Videshwar Temple</a></li>
-                              </ul>
-                            </li>
-                                
-                                                     
-                        <li><a class="page-scroll" href="aboutSaints.html"><span>Great Saints<span class="border"></span></span></a></li>        
-                        
+                            </ul>
+                        </li>
+
+                        <li><a class="page-scroll" href="aboutSaints.html"><span>Great Saints<span class="border"></span></span></a></li>
+
                         <li class="dropdown">
                             <a class="page-scroll" href="events.html">
                                 <span>Media<span class="border"></span></span>
@@ -139,67 +139,53 @@
 
                         <li><a class="page-scroll" href="events.html">News & Events<span class="border"></span></a></li>
                         <li><a class="page-scroll" href="contribution.html">Contributions<span class="border"></span></a></li>
-                        
-						<!-- <li><a href="horoscope.html"><span>Horoscope <span class="border"></span></span></a></li>                     -->
-						<li><a href="contact.html"><span>Contact us <span class="border"></span></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>    
+                        <li><a href="contact.html"><span>Contact us <span class="border"></span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!------------------------------------------------------------------>
     <br><br><br><br><br>
-    <!-- <section id="aarti" class="secPad">
-        <div class="container">
-            <div class="center-heading text-center">    
-            <ul class="nav navbar-nav navbar-center">
-                <li><a href="bhupali_arti.html">|| Bhupali Aarti ||</a><li>                    
-                <li><a href="kakad_arti.html">|| Kakad Aarti ||</a></li>                    
-                <li><a href="madhyan_arti.html">|| Madhyan Aarti ||</a></li>
-                <li><a href="dhup_arti.html">|| Dhup Aarti ||</a></li>          
-                <li><a href="shej_arti.html">|| Shej Aarti ||</a></li>           
-                       
-            </ul>    
-            </div>
-        </div>
-	</section> -->
-    <br>
+
     <h2 style="text-align: center;">Lalleshwari Lal Vakhs</h2>
     <div class="table-responsive">
-        <table id="custom-table">
+        <table id="custom-table" class="table table-bordered">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Language</th>
                     <th>Play</th>
                     <th>Download</th>
-                   </tr>
+                </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Lal Vakh Part 1</td>
                     <td>Kashmiri</td>
                     <td>
-                        <a class="custom-button play" href="audio/LVVOL1A.mp3" target="_blank">
-                            <i class="fas fa-play"></i>
-                        </a>
+                        <audio controls>
+                            <source src="audio/LVVOL1A.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </td>
                     <td>
                         <a class="custom-button download" href="audio/LVVOL1A.mp3" download>
-                            <i class="fas fa-download"></i> 
+                            <i class="fas fa-download"></i>
                         </a>
                     </td>
-                  </tr>
+                </tr>
                 <tr>
                     <td>Lal Vakh Part 2</td>
                     <td>Kashmiri</td>
                     <td>
-                        <a class="custom-button play" href="audio/LVVOL1B.mp3" target="_blank">
-                            <i class="fas fa-play"></i>
-                        </a>
+                        <audio controls>
+                            <source src="audio/LVVOL1B.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </td>
                     <td>
-                        <a class ="custom-button download" href="audio/LVVOL1B.mp3" download>
+                        <a class="custom-button download" href="audio/LVVOL1B.mp3" download>
                             <i class="fas fa-download"></i>
                         </a>
                     </td>
@@ -208,44 +194,41 @@
                     <td>Lal Vakh Part 3</td>
                     <td>Kashmiri</td>
                     <td>
-                        <a class="custom-button play" href="audio/LVVOL2A.mp3" target="_blank">
-                            <i class="fas fa-play"></i>
-                        </a>
+                        <audio controls>
+                            <source src="audio/LVVOL2A.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </td>
                     <td>
                         <a class="custom-button download" href="audio/LVVOL2A.mp3" download>
-                            <i class="fas fa-download"></i> 
-                        </a>
-                    </td>
-                  </tr>
-                <tr>
-                    <td>Lal Vakh Part 4</td>
-                    <td>Kashmiri</td>
-                    <td>
-                        <a class="custom-button play" href="audio/LVVOL2B.mp3" target="_blank">
-                            <i class="fas fa-play"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a class ="custom-button download" href="audio/LVVOL2B.mp3" download>
                             <i class="fas fa-download"></i>
                         </a>
                     </td>
                 </tr>
+                <tr>
+                    <td>Lal Vakh Part 4</td>
+                    <td>Kashmiri</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/LVVOL2B.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <a class="custom-button download" href="audio/LVVOL2B.mp3" download>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </td>
+                </tr>
+                <!-- Add more Aartis with play, download, and PDF links as needed -->
+            </tbody>
+        </table>
+    </div>
 
-                <!-- Add more Aartis with play, download, and PDF links as needed -->
-            </tbody>
-        </table>
-    </div>
-                <!-- Add more Aartis with play, download, and PDF links as needed -->
-            </tbody>
-        </table>
-    </div>
-  
-    <!----------------FOOTER-------------------------->    
+    <!----------------FOOTER-------------------------->
     <footer style="text-align: center;">
         <div class="clearfix footer_element">
-            <div>&copy; Devraz Bhairav temple. All Rights Reserved.</div>    
+            <div>&copy; Devraz Bhairav temple. All Rights Reserved.</div>
         </div>
     </footer>
 
@@ -262,13 +245,6 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-    <script>
-        function playAudio(audioSrc) {
-            var audio = new Audio(audioSrc);
-            audio.play();
-        }
-    </script>
-
 </body>
 
 </html>

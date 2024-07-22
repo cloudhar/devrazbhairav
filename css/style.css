@@ -16,6 +16,23 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
+  #text-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#initial-line {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#read-more-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 body {
   margin: 0; }
 
