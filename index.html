@@ -118,6 +118,19 @@
             color: inherit;
             text-decoration: none;
         }
+        /* Animation for (new) notification */
+        .new-notification {
+            display: inline-block;
+            font-weight: bold;
+            color: #ff0000;
+            margin-left: 10px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
 
     /* Style for the popup */
     #popup {
@@ -405,9 +418,16 @@
     <div class="banner-container">
         <div class="banner" style="display: flex; flex-direction: row;">
             <a  style="margin-left: 30px;" href="contribution.html">Click here to donate generously to rebuild Devraz Bhairav Temple</a>
-            <a style="margin-left: 400px;" href="events.html">Click here to check recent news and events</a>
+            <a style="display: flex; align-items: center; margin-left: 400px;" href="events.html">
+                <span style="background-color:yellow; color:black; padding: 2px 8px; border-radius: 12px; font-weight: bold; margin-right: 10px; font-size: 0.9em; animation: pulse 1s infinite;">New</span>
+                Click here to check recent news and events
+            </a>
             <a  style="margin-left: 400px;" href="contribution.html">Click here to donate generously to rebuild Devraz Bhairav Temple</a>
-            <a style="margin-left: 400px;" href="events.html">Click here to check recent news and events</a>
+            <a style="display: flex; align-items: center; margin-left: 400px;" href="events.html">
+                <a style="display: flex; align-items: center; margin-left: 400px;" href="events.html">
+                    <span style="background-color:yellow; color:black; padding: 2px 8px; border-radius: 12px; font-weight: bold; margin-right: 10px; font-size: 0.9em; animation: pulse 1s infinite;">New</span>
+                    Click here to check recent news and events
+                </a>
         </div>
     </div>
 
