@@ -1,0 +1,85 @@
+.banner-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.banner {
+    display: flex;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    animation: moveBanner 20s linear infinite;
+    flex-direction: column; /* default to column for small screens */
+}
+
+.banner-link {
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.new-sticker {
+    background-color: yellow;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.9em;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row; /* Row layout for larger screens */
+        flex-wrap: nowrap; /* Prevent wrapping to keep all links in one line */
+        animation: moveBanner 20s linear infinite; /* Continue the animation */
+    }
+
+    .banner-link {
+        margin-left: 30px;
+    }
+
+    .banner-link:nth-child(2) {
+        margin-left: 400px;
+    }
+
+    .banner-link:nth-child(3) {
+        margin-left: 400px;
+    }
+
+    .banner-link:nth-child(4) {
+        margin-left: 400px;
+    }
+
+    .banner-link:nth-child(5) {
+        margin-left: 400px;
+    }
+}
+
+@keyframes moveBanner {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.banner a {
+    color: inherit;
+    text-decoration: none;
+}
