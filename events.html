@@ -125,6 +125,33 @@
             text-align: left;
             padding: 0;
         }
+        .sticker {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.pulse-text {
+    color: #0000ff;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
         #home1 ul li {
             margin-top: 10px;
@@ -283,7 +310,7 @@
                       <span class="hidden-text" style="display: none;"> from encroachments and land mafia.
                                             The court directed the district magistrate of Ganderbal to preserve, protect, 
                                             and maintain two Hindu shrines, 'Asthapan Devraj Bharav' in Nuner village and
-                                            the 'VIdeshwar' shrine. This decision follows a petition by Kashmiri Panditsof Nunar
+                                            the 'Videshwar' shrine. This decision follows a petition by Kashmiri Panditsof Nunar
                                             who raised concerns about encroachments, particularly on the only Hindu cremation 
                                             ground in Ganderbal.  Justice Sanjeev Kumar's order
                                             emphasized the immediate takeover and protection of these properties by
@@ -292,7 +319,11 @@
                                             magistrate will manage the properties.
                                             This judgement sets a precedent for safeguarding many Hindu religious sites 
                                             in Kashmir that are currently neglected and 
-                                            at risk of illegal occupation. <br> https://www.greaterkashmir.com/jammu-kashmir/unattended-kashmiri-pandit-temple-shrine-property-be-protected-by-state-orders-jk-hc/
+                                            at risk of illegal occupation. <br><a href="//www.greaterkashmir.com/jammu-kashmir/unattended-kashmiri-pandit-temple-shrine-property-be-protected-by-state-orders-jk-hc/" class="sticker">
+                                                <span class="pulse-text">Click here for more details</span>
+                                            </a>
+                                            
+                                            
                                         </span>
                                     </div>
                                     <button onclick="toggleText(this)">Show More</button>
