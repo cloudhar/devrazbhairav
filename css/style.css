@@ -31,6 +31,27 @@ html {
     text-decoration: underline;
     cursor: pointer;
 }
+/* Show hidden text and hide buttons on desktop */
+@media (min-width: 768px) {
+  .hidden-text {
+      display: inline !important;
+  }
+
+  .show-more-button {
+      display: none !important;
+  }
+}
+
+/* Hide hidden text and show buttons on mobile */
+@media (max-width: 767px) {
+  .hidden-text {
+      display: none;
+  }
+
+  .show-more-button {
+      display: inline-block;
+  }
+}
 
 
 body {
