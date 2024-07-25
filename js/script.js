@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // JavaScript is not necessary for this basic example as the link navigates to another page.
-    // Additional JavaScript functionality can be added if needed.
+
 });
 
 /* gallery */
