@@ -31,6 +31,35 @@ html {
     text-decoration: underline;
     cursor: pointer;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; /* Add padding to the container */
+}
+
+.image-container {
+  max-width: 100%;
+  width: 100%; /* Ensures the container takes full width */
+  text-align: center; /* Centers the content inside the container */
+}
+
+.invite {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Add some padding or margin for better appearance on mobile */
+@media (max-width: 768px) {
+  .image-container {
+      padding: 10px;
+  }
+}
+
 /* Show hidden text and hide buttons on desktop */
 @media (min-width: 768px) {
   .hidden-text {
