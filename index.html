@@ -158,6 +158,64 @@
 }
 
 
+/*banner for live youtube container */
+.ad-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.banner-ad {
+    display: inline-block;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    animation: moveBanner 20s linear infinite;
+    position: relative;
+    left: 100%;
+}
+
+@keyframes moveBanner {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+.banner a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .banner-ad {
+        animation: moveBanner 10s linear infinite; /* Faster animation for mobile view */
+    }
+
+    .banner a {
+        margin: 0 5px; /* Reduce the margin for mobile view to fit more content */
+        font-size: 14px; /* Further reduce the font size for mobile view */
+    }
+
+    .new-notification {
+        font-size: 0.65em; /* Slightly reduce the font size for new notification on mobile */
+    }
+}
+/*end of live video youtube
+
+
+
 
 
     /* Style for the popup */
@@ -462,19 +520,29 @@
     <div id="fh5co-features">
         <div class="container">
             <div class="row text-center">
+                
+                <!--Invitation Image -->
                 <div class="container" style="color: #000;">
                     <div class="image-container">
                         <img class="invite" src="img/invite.jpg" alt="Invite Image">
                         <p id="name"></p>
                     </div>
                 </div>
-                
-                
+                <!--Invitation image end-->
+
                     <!--Youtube 
                     <div class="youtube-video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/2j8PTKf5vC0?si=6ZRTI2PS8fbSRco7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!--Ad container youtube-->
+                            <div class="ad-container">
+                            <div class="banner-ad">
+                                <p> Join us for Devraz Bhairav Temple's Foundation Stone Laying Ceremony on 27/07/24 at 12 PM!</p>
+                            </div>
+                        </div>
+                        <!--end of ad container youtube-->
                     </div>
                     <!-- Youtube-->
+
                     <h5 class="fh5co-section-lead">
                         <p style="font-size: 20px;">
                             <br><br><br><b>Embracing our roots, we honor the past to empower our future.</b>
