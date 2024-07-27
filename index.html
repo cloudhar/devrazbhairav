@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js"> <!--<![endif]-->
 	<head>
@@ -8,10 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Devraz Bhairav Temple" />
 	<meta name="keywords" content="Sri Shirdi, Saibaba ,Temple ,Nunar,Hyderabad, Ganderbal" />
-
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 	<!-- shortcut icon -->
     <link rel="shortcut icon" href="img/logo.jpeg">
     
@@ -21,7 +18,6 @@
 	<script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         window.jssor_1_slider_init = function() {
-
             var jssor_1_SlideoTransitions = [
               [{b:-1,d:1,ls:0.5},{b:0,d:1000,y:5,e:{y:6}}],
               [{b:-1,d:1,ls:0.5},{b:200,d:1000,y:25,e:{y:6}}],
@@ -41,7 +37,6 @@
               [{b:0,d:600,x:1140,o:0.6,e:{x:6}}],
               [{b:-1,d:1,sX:5,sY:5},{b:600,d:600,o:1,sX:1,sY:1,e:{sX:3,sY:3}}]
             ];
-
             var jssor_1_options = {
               $AutoPlay: 1,
               $LazyLoading: 1,
@@ -58,30 +53,21 @@
                 $SpacingY: 20
               }
             };
-
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
             /*#region responsive code begin*/
-
             var MAX_WIDTH = 1600;
-
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
-
                 if (containerWidth) {
-
                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
                     jssor_1_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
                 }
             }
-
             ScaleSlider();
-
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
@@ -90,7 +76,6 @@
     </script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
     <style>
-
 .banner-container {
     position: absolute;
     left: 0;
@@ -99,7 +84,6 @@
     overflow: hidden;
     white-space: nowrap;
 }
-
 .banner {
     display: inline-block;
     padding: 8px 0;
@@ -110,18 +94,15 @@
     position: relative;
     left: 100%;
 }
-
 @keyframes moveBanner {
     0% { left: 100%; }
     100% { left: -100%; }
 }
-
 .banner a {
     color: inherit;
     text-decoration: none;
     margin: 0 30px;
 }
-
 .new-notification {
     display: inline-block;
     font-weight: bold;
@@ -134,90 +115,24 @@
     font-size: 0.75em;
     font-style: italic;
 }
-
 @keyframes pulse {
     0% { opacity: 1; }
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
-
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     .banner {
         animation: moveBanner 10s linear infinite; /* Faster animation for mobile view */
     }
-
     .banner a {
         margin: 0 5px; /* Reduce the margin for mobile view to fit more content */
         font-size: 14px; /* Further reduce the font size for mobile view */
     }
-
     .new-notification {
         font-size: 0.65em; /* Slightly reduce the font size for new notification on mobile */
     }
 }
-
-
-/*banner for live youtube container */
-.ad-container {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.banner-ad {
-    display: inline-block;
-    padding: 8px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: blue;
-    animation: moveBanner 20s linear infinite;
-    position: relative;
-    left: 100%;
-}
-
-@keyframes moveBanner {
-    0% { left: 100%; }
-    100% { left: -100%; }
-}
-
-.banner a {
-    color: inherit;
-    text-decoration: none;
-    margin: 0 30px;
-}
-
-
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    .banner-ad {
-        animation: moveBanner 10s linear infinite; /* Faster animation for mobile view */
-    }
-
-    .banner a {
-        margin: 0 5px; /* Reduce the margin for mobile view to fit more content */
-        font-size: 14px; /* Further reduce the font size for mobile view */
-    }
-
-    .new-notification {
-        font-size: 0.65em; /* Slightly reduce the font size for new notification on mobile */
-    }
-}
-/*end of live video youtube
-
-
-
-
-
     /* Style for the popup */
     #popup {
             display: none; /* Hidden by default */
@@ -242,7 +157,6 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-
 /* Hide submenu by default */
 .submenu {
     display: none;
@@ -254,29 +168,23 @@
     padding: 0;
     margin: 0;
 }
-
 /* Display submenu on hover */
 .dropdown:hover .submenu {
     display: block;
 }
-
 /* Style submenu items */
 .submenu li {
     border-bottom: 1px solid #ddd;
 }
-
 .submenu li a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
     color: #333;
 }
-
 .submenu li a:hover {
     background-color: #f1f1f1;
 }
-
-
         /* jssor slider loading skin spin css */
         .jssorl-009-spin img {
             animation-name: jssorl-009-spin;
@@ -284,19 +192,15 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
-
         @keyframes jssorl-009-spin {
             from {
                 transform: rotate(0deg);
             }
-
             to {
                 transform: rotate(360deg);
             }
         }
 		/* Default style */
-
-
         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
                 /* For screens with a maximum width of 768px (e.g., mobile devices) */
         @media (max-width: 768px) {
@@ -305,7 +209,6 @@
                 height: 50vh; /* Adjust the height as needed for mobile */
             }
         }
-
         /* For screens with a minimum width of 769px (e.g., larger screens) */
         @media (min-width: 769px) {
             .pic1 {
@@ -313,8 +216,6 @@
                 height: 70vh; /* Adjust the height as needed for larger screens */
             }
         }
-
-
         /*jssor slider bullet skin 132 css*/
         .jssorb132 {position:absolute;}
         .jssorb132 .i {position:absolute;cursor:pointer;}
@@ -322,15 +223,11 @@
         .jssorb132 .i:hover .b {fill:#000;fill-opacity:.7;stroke:#fff;stroke-width:2000;stroke-opacity:0.8;}
         .jssorb132 .iav .b {fill:#000;stroke:#fff;stroke-width:2400;fill-opacity:0.8;stroke-opacity:1;}
         .jssorb132 .i.idn {opacity:0.3;}
-
         .jssora051 {display:block;position:absolute;cursor:pointer;}
         .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
         .jssora051:hover {opacity:.8;}
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-
-
-
         /* CSS for the modal/lightbox */
 .modal {
   display: none;
@@ -343,14 +240,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
-
 .modal-content {
   display: block;
   margin: 0 auto;
   max-width: 80%;
   max-height: 80%;
 }
-
 .close {
   position: absolute;
   top: 15px;
@@ -360,28 +255,20 @@
   font-weight: bold;
   cursor: pointer;
 }
-
 /* Add any other styles you want for the modal */
 /* Style for the submenu */
 /* Style for the menu items */
-
     </style>
     <link rel="stylesheet" href="css/home.css">
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 	</head>
 	<body>
 		
-
-
-
-
 	<header id="fh5co-header" role="banner">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
@@ -392,7 +279,6 @@
                 >Devraz Bhairav Temple
               </a>
 				</div>
-
 				<div id="fh5co-navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li ><a href="index.html"><span>Home <span class="border"></span></span></a></li>
@@ -413,10 +299,8 @@
                             <ul class="submenu">
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="arti.html">Bhajans</a></li>
-
                             </ul>
                         </li>
-
                       
                         <li><a class="page-scroll" href="events.html">News & Events<span class="border"></span></a></li>
                         <li><a class="page-scroll" href="contribution.html">Contributions<span class="border"></span></a></li>
@@ -487,20 +371,16 @@
     <script type="text/javascript">jssor_1_slider_init();
     </script>
     <!-- #endregion Jssor Slider End -->
-
 <!-- popup for advertisement  -->
     <!-- <div id="overlay"></div>
     <div id="popup" style="width: 500px; height: 300px; border-radius: 10px;">
         <h2>Popup Message</h2>
         <p>donate donate !!!.</p>
-
 <span> <a href="contribution.html">donate now!!</a></span>
         <button onclick="closePopup()" style="position: absolute; top: 10px; right: 10px;">X</button>
     </div> -->
 <!-- popup ends here  -->
-
 	<!-- Features -->
-
     <div class="banner-container">
         <div class="banner">
             <a href="contribution.html">Click here to contribute</a>
@@ -516,39 +396,18 @@
         </div>
     </div>
     
-
     <div id="fh5co-features">
         <div class="container">
             <div class="row text-center">
-                
-                <!--Invitation Image 
-                <div class="container" style="color: #000;">
-                    <div class="image-container">
-                        <img class="invite" src="img/invite.jpg" alt="Invite Image">
-                        <p id="name"></p>
-                    </div>
-                </div>
-                <!--Invitation image end-->
-
-                    <!--Youtube -->
+                <div class="col-md-8 col-md-offset-2" style="color: #000;">
+                    <!--Youtube Video Container
                     <div class="youtube-video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tVej3LAO8Vw?si=OPpl9iFIe27Zx6Pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                        
-                        <!--Ad container updates -->
-                            <div class="ad-container">
-                            <div class="banner-ad">
-                                <p> Watch Deputy Commissioner Ganderbal laid foundation stone for the construction of chain link fencing</p>
-                                
-                            </div>
-                        </div>
-                        <!--end of ad container updates-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PGwXZqviGyg?si=-uJbLrQvvHH9hBes&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <!-- Youtube-->
-
+                <!--End of youtube video container-->
                     <h5 class="fh5co-section-lead">
                         <p style="font-size: 20px;">
-                            <br><br><br><b>Embracing our roots, we honor the past to empower our future.</b>
+                            <br><br><b>Embracing our roots, we honor the past to empower our future.</b>
                         </p>
                     </h5>
                     <p class="fh5co-section-sub-lead" style="text-align: justify; font-family: 'Times New Roman', Times, serif; color: #000;">
@@ -585,7 +444,6 @@
     
     
     <button id="load-more-button" onclick="location.href='about_devraz.html';">More</button>
-
    <h2 id="photo_gal">Photo Gallery</h2>
  
     <div class="gallery-container" id="gallery">
@@ -648,7 +506,6 @@
             <div class="col-md-2 col-sm-6">
                 <div class="footer-widget top-level">
 			 <ul class="footer-links">
-
 		<li><a href="contribution.html" style="color:#884dff;font-family:'Roboto Thin';font-size:16pt">Contributions</a></li>
                  <li><a href="about_devraz.html" style="color:#884dff;font-family:'Roboto Thin';font-size:16pt">Devraz Bhairav</a></li>
 		<li><a href="videshwar.html" style="color:#884dff;font-family:'Roboto Thin';font-size:16pt">Videshwar Mahraj</a></li>
@@ -669,8 +526,6 @@
         </div>
     </div>
 </footer>
-
-
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -690,16 +545,13 @@
 function openImage(image) {
   var modal = document.getElementById("imageModal");
   var modalImage = document.getElementById("modalImage");
-
   modal.style.display = "block";
   modalImage.src = image.src;
 }
-
 function closeImage() {
   var modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
-
 // Close the modal when clicking outside the image
 window.onclick = function (event) {
   var modal = document.getElementById("imageModal");
@@ -707,28 +559,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-
-        // Function to show the popup
-        function showPopup() {
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
-
-        // Show the popup 10 seconds after the page loads
-        window.onload = function() {
-            setTimeout(showPopup, 150000);
-        }
-  
-
-    </script>
-
-	
-	</body>
-</html>
