@@ -150,6 +150,22 @@
         border-radius: 5px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       }
+      /*Youtube grid video container */
+.youtube-video-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .youtube-video-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    
+
 
       /* Style for the filter button alignment */
       div[align="center"] {
@@ -308,6 +324,7 @@
               <button class="filter-button" data-filter="all">All</button>
               <button class="filter-button" data-filter="category1">ZESHTA ASHTAMI</button>
               <button class="filter-button" data-filter="category2">JANAM ASHTAMI</button>
+              <button class="filter-button" data-filter="category5">SOCIAL MEDIA VIDEOS</button>
               <!--<button class="filter-button" data-filter="category4">FOUNDATION STONE LAYING CEREMONY</button> -->
           </div>
 
@@ -373,6 +390,12 @@
                   <img class="img-responsive" alt="" src="img/photo_gallery/header_devraz2.jpg" />
               </a>
           </div>
+          <div class="youtube-video-container">
+            <iframe width="560" height="315" src="https://youtube.be/embed/U5kK7wjByss?si=COL5PCI6aNO3w5oN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9iIQ5GGVp10?si=_kwEsMdOad-N0VlN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UkZ4ygLJ3r8?si=HWrVVoSQBiSs-4jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tVej3LAO8Vw?si=08fXkPlOG_B5xRrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
   </div>
 </section>
