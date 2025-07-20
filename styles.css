@@ -1,0 +1,87 @@
+/* Navigation Dropdown */
+.navbar-nav > li {
+  position: relative;
+}
+
+.navbar-nav li ul.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #ffffff;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav li:hover > ul.submenu {
+  display: block;
+}
+
+.navbar-nav li ul.submenu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333333;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-nav li ul.submenu li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Navbar toggle (Mobile) */
+.navbar-toggle {
+  font-size: 18px;
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff !important;
+}
+
+/* Mobile styles for submenu */
+@media (max-width: 767px) {
+  .navbar-nav li ul.submenu {
+    position: relative;
+    background: #fff;
+    box-shadow: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar-nav li ul.submenu li a {
+    padding-left: 25px;
+  }
+
+  .navbar-collapse {
+    background-color: #333333;
+  }
+
+  .navbar-nav > li > a {
+    color: #ffffff !important;
+  }
+
+  .navbar-nav li ul.submenu li a {
+    color: #333 !important;
+  }
+}
+
+/* Optional: Smooth hover underline animation */
+.navbar-nav > li > a span.border {
+  display: block;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav > li:hover > a span.border {
+  background-color: #fcd34d; /* Tailwind yellow-300 */
+}
